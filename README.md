@@ -38,4 +38,3 @@ npm run dev
 Licensed under the [MIT License](./LICENSE).
 
 <a href="https://www.vecteezy.com/free-vector/decorative">Logo vector by Vecteezy</a>
-
