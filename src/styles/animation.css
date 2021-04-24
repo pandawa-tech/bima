@@ -1,0 +1,17 @@
+.jump {
+    animation: jump .2s normal;
+    background-color: #40de8a !important;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.reset {
+    transition: height 0.5s ease;
+}

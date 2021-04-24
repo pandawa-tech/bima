@@ -1,0 +1,12 @@
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <script> try {
+			const html = document.querySelector('html');
+			const preferDark = window.matchMedia('(prefers-color-scheme: dark)');
+			const initial = preferDark.matches ? 'dark' : 'light';
+			if (!localStorage.theme) localStorage.theme = initial;
+			html.classList.add(localStorage.theme);
+			preferDark.addEventListener('change', function (event) {
+				const theme = event.matches ? 'dark' : 'light';
+				html.classList.add(theme), localStorage.theme = theme;
+				html.classList.remove(event.matches ? 'light' : 'dark');
+			});
+		} catch (error) {} </script> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=favicon.ico rel=icon type=image/x-icon> <link href=logo-192.png rel=apple-touch-icon> <script>__SAPPER__={baseUrl:"",preloaded:[void 0]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.736810fc.js"}catch(e){main="/client/legacy/client.f906a208.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.4.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-a2a37a6a.css rel=stylesheet><link href=client/index-35e5cc71.css rel=stylesheet> <link href=/client/client.736810fc.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-a2a37a6a.css rel=preload as=style><link href=/client/index.7bb3c11b.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.5607aec6.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/index-35e5cc71.css rel=preload as=style></head> <body> <div id=sapper> </div> 

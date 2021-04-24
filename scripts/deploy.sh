@@ -1,0 +1,1 @@
+aws s3 sync __sapper__/export s3://bima-algorithm-visualizer --delete --metadata '{"cache-control":"300"}'

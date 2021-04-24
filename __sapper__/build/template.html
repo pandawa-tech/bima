@@ -1,0 +1,12 @@
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <script> try {
+			const html = document.querySelector('html');
+			const preferDark = window.matchMedia('(prefers-color-scheme: dark)');
+			const initial = preferDark.matches ? 'dark' : 'light';
+			if (!localStorage.theme) localStorage.theme = initial;
+			html.classList.add(localStorage.theme);
+			preferDark.addEventListener('change', function (event) {
+				const theme = event.matches ? 'dark' : 'light';
+				html.classList.add(theme), localStorage.theme = theme;
+				html.classList.remove(event.matches ? 'light' : 'dark');
+			});
+		} catch (error) {} </script> %sapper.base% <link href=manifest.json rel=manifest crossorigin=use-credentials> <link href=favicon.ico rel=icon type=image/x-icon> <link href=logo-192.png rel=apple-touch-icon> %sapper.scripts% %sapper.styles% %sapper.head% </head> <body> <div id=sapper>%sapper.html%</div> 
