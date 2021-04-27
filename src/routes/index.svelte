@@ -131,32 +131,32 @@
     }
     switch (name) {
       case "merge":
-        import("./sortingAlgorithms/mergeSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/mergeSort").then((fun) => {
           doSort(fun.getMergeSortAnimations(array));
         });
         break;
       case "bubble":
-        import("./sortingAlgorithms/bubbleSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/bubbleSort").then((fun) => {
           doSort(fun.getBubbleSortAnimations(array));
         });
         break;
       case "insertion":
-        import("./sortingAlgorithms/insertionSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/insertionSort").then((fun) => {
           doSort(fun.getInsertionSortAnimations(array));
         });
         break;
       case "heap":
-        import("./sortingAlgorithms/heapSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/heapSort").then((fun) => {
           doSort(fun.getHeapSortAnimations(array));
         });
         break;
       case "quick":
-        import("./sortingAlgorithms/quickSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/quickSort").then((fun) => {
           doSort(fun.getQuickSortAnimations(array));
         });
         break;
       case "intro":
-        import("./sortingAlgorithms/introSort").then((fun) => {
+        import("pandawa-sort-animation/dist/algorithms/introSort").then((fun) => {
           doSort(fun.getIntroSortAnimations(array));
         });
         break;

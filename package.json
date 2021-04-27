@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "pandawa-sort-animation": "^0.0.7",
     "polka": "next",
     "sirv": "^1.0.0"
   },
